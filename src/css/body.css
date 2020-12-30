@@ -1,0 +1,22 @@
+.body {
+  display: flex;
+  position: sticky;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: calc(100vw - 56.25%);
+  background: white;
+  box-shadow: 0 -2px 5px gray;
+  height: 200vh;
+}
+
+.home-content, .product-content, .about-content, .contact-content {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 80vh;
+  left: 0;
+}
+
+.hide-d {
+  display: none;
+}

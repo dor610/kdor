@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="../css/index.css" type="text/css">
+  <link rel="stylesheet" href="../css/navigator.css" type="text/css">
+  <link rel="stylesheet" href="../css/loader.css" type="text/css">
+  <link rel="stylesheet" href="../css/header.css" type="text/css">
+  <link rel="stylesheet" href="../css/body.css" type="text/css">
+</head>
+
+<body>
+
+  <div id="loader" class="loader hide-o">
+    <div id="loader-container" class="loader-container"></div>
+  </div>
+
+  <div class="navigator-container">
+    <div id="page-transition" class="page-transition"></div>
+    <nav id="nav" class="nav right-slide">
+      <div id="home-btn">Home</div>
+      <div id="work-btn">Works</div>
+      <div id="about-btn">About</div>
+      <div id="contact-btn">Contact</div>
+    </nav>
+
+
+  </div>
+
+  <div>
+    <div class="header">
+      <div class="video-container">
+        <video autoplay loop>
+          <source src="../video/kdor-logo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="body">
+      <div id="home-content" class="home-content"></div>
+      <div id="product-content" class="product-content"></div>
+      <div id="about-content" class="about-content"></div>
+      <div id="contact-content" class="contact-content"></div>
+    </div>
+    <div class="footer"></div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js" integrity="sha512-0bCDSnaX8FOD9Mq8WbHcDwshXwCB5V4EP+UBu87WQgga2b7lAsuEbaSmIZjH/XEmNhJuhrPbFHemre5HZwrk9w==" crossorigin="anonymous"></script>
+  <script src="../animation/pageTransition/main.js"></script>
+  <script src="../animation/loader/loader.js"></script>
+  <script src="../js/navigator.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

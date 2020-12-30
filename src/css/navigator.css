@@ -1,0 +1,51 @@
+.navigator-container {
+  display: block;
+  position: fixed;
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 1;
+}
+
+.page-transition {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.nav {
+  display: block;
+  position: fixed;
+  top: 30vh;
+  z-index: 10;
+  right: 0;
+  transition: right 0.5s;
+  color: white;
+  background: rgba(16, 30, 28, 0.5);
+}
+
+.nav div {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.nav div:hover {
+  cursor: pointer;
+}
+
+.menu-background {
+  position: fixed;
+  right: 0;
+  width: 80px;
+  height: 200px;
+  top: 30vh;
+  background: rgba(16, 30, 28, 0.5);
+}
+
+.right-slide {
+  right: -200px;
+}

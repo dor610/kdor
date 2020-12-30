@@ -1,0 +1,21 @@
+.header {
+  width: 100vw;
+  height: auto;
+  background: #101E1C;
+  position: fixed;
+  z-index: -9999;
+  min-width: 100%;
+  top: -8vw;
+  right: 0;
+}
+
+.video-container {
+  width: 100vw;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  border: none;
+  outline: none;
+}

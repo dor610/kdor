@@ -1,0 +1,22 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.loader-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hide-d {
+  display: none;
+}
+
+.hide-o {
+  opacity: 0;
+}
