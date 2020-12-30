@@ -6,7 +6,7 @@ let loaderAni = lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: '../animation/loader/data.json'//, // the path to the animation json
+  path: 'src/animation/loader/data.json'//, // the path to the animation json
   //rendererSettings:{ preserveAspectRatio:'none' }
 });
 

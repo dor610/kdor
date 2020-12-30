@@ -6,6 +6,6 @@ let pageTransition = lottie.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: '../animation/pageTransition/data.json', // the path to the animation json
+  path: 'src/animation/pageTransition/data.json', // the path to the animation json
   rendererSettings:{ preserveAspectRatio:'none' }
 });
