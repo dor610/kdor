@@ -9,47 +9,60 @@
   <link rel="stylesheet" href="src/css/loader.css" type="text/css">
   <link rel="stylesheet" href="src/css/header.css" type="text/css">
   <link rel="stylesheet" href="src/css/body.css" type="text/css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <div id="loader" class="loader hide-o">
+  <div id="loader" class="loader hide-o hide-d">
     <div id="loader-container" class="loader-container"></div>
   </div>
 
   <div class="navigator-container">
-    <div id="page-transition" class="page-transition"></div>
-    <nav id="nav" class="nav right-slide">
-      <div id="home-btn">Home</div>
-      <div id="work-btn">Works</div>
-      <div id="about-btn">About</div>
-      <div id="contact-btn">Contact</div>
-    </nav>
+    <div id="page-transition" class="page-transition hide-v"></div>
+    <div id="nav-container" class="nav-container right-slide">
+      <div id="menu-btn" class="menu-btn"></div>
+      <nav id="nav" class="nav">
+        <div id="home-btn">Home</div>
+        <div id="work-btn">Work</div>
+        <div id="about-btn">About</div>
+      </nav>
+    </div>
 
 
   </div>
 
-  <div>
-    <div class="header">
+  <div id="main-content" class="main-content">
+
+    <div id="header" class="header">
+      <div id="header-content" class="header-content">
+        <p data-aos="fade-right" data-aos-duration="2000">Welcome</p>
+        <div data-aos="fade-in" data-aos-duration="2000" data-aos-delay="2000">This is Kdor website, a website was made by Khang for his study. All right reserved to him. Please contact him for more information about this website and its contents.
+          website.</div>
+      </div>
       <div class="video-container">
-        <video autoplay loop>
-          <source src="src/video/kdor-logo.mp4" type="video/mp4">
+        <video id="video1" class="video" autoplay>
+          <source src="src/video/logo-2_1.mp4" type="video/mp4">
+        </video>
+        <video id="video2" class="video hide-d" autoplay loop>
+          <source src="src/video/logo-2.mp4" type="video/mp4">
         </video>
       </div>
     </div>
-    <div class="body">
+
+    <div id="body" class="body">
       <div id="home-content" class="home-content"></div>
-      <div id="product-content" class="product-content"></div>
+      <div id="work-content" class="work-content"></div>
       <div id="about-content" class="about-content"></div>
-      <div id="contact-content" class="contact-content"></div>
     </div>
     <div class="footer"></div>
   </div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js" integrity="sha512-0bCDSnaX8FOD9Mq8WbHcDwshXwCB5V4EP+UBu87WQgga2b7lAsuEbaSmIZjH/XEmNhJuhrPbFHemre5HZwrk9w==" crossorigin="anonymous"></script>
-  <script src="src/animation/pageTransition/main.js"></script>
-  <script src="src/animation/loader/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="src/animation/animation.js"></script>
   <script src="src/js/navigator.js"></script>
   <script src="src/js/index.js"></script>
 </body>

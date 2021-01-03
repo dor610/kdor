@@ -2,9 +2,10 @@
   display: block;
   position: fixed;
   background-color: transparent;
-  width: 100vw;
+  width: 100px;
   height: 100vh;
   top: 0;
+  right: 0;
   z-index: 1;
 }
 
@@ -13,17 +14,25 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
+  visibility: visible;
+  z-index: 10;
+  left: calc(100px - 100vw);
 }
 
-.nav {
-  display: block;
+.nav-container {
+  display: flex;
   position: fixed;
-  top: 30vh;
-  z-index: 10;
+  top: 0;
+  height: 100vh;
+  padding-top: 40vh;
+  z-index: 1;
   right: 0;
   transition: right 0.5s;
   color: white;
-  background: rgba(16, 30, 28, 0.5);
+  font-size: 25px;
+  background: rgba(16, 30, 28, 0.8);
+  background: #FFC0CB;
+  /*background: #FFAA4F;*/
 }
 
 .nav div {
@@ -35,17 +44,38 @@
 
 .nav div:hover {
   cursor: pointer;
+  color: #73F2EF;
+  /*text-shadow: 0 0 5px #41CECC;*/
 }
 
-.menu-background {
-  position: fixed;
-  right: 0;
-  width: 80px;
-  height: 200px;
-  top: 30vh;
-  background: rgba(16, 30, 28, 0.5);
+.menu-btn {
+  margin-top: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.menu-btn:hover {
+  cursor: pointer;
+}
+
+.active-btn {
+  /*color: #FFE4E9;
+  text-shadow: 0 0 5px #FFC0CB;*/
+  color: #FFAA4F;
 }
 
 .right-slide {
   right: -200px;
+}
+
+.half-right-slide {
+  right: -100px;
+}
+
+.hide-d {
+  display: none;
+}
+
+.hide-v {
+  visibility: hidden;
 }
