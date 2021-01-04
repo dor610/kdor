@@ -8,10 +8,10 @@ body {
   position: relative;
   font-family: serif;
   width: 100vw;
-  background-color: #101E1C;
 }
 
 .main-content {
   width: 100vw;
   height: auto;
+  background-color: pink;
 }

@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KDor</title>
   <link rel="stylesheet" href="src/css/index.css" type="text/css">
   <link rel="stylesheet" href="src/css/navigator.css" type="text/css">
   <link rel="stylesheet" href="src/css/loader.css" type="text/css">
-  <link rel="stylesheet" href="src/css/header.css" type="text/css">
+  <link rel="stylesheet" href="src/css/home.css" type="text/css">
   <link rel="stylesheet" href="src/css/body.css" type="text/css">
+  <link rel="stylesheet" href="src/css/scrollbar.css" type="text/css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -18,9 +20,18 @@
     <div id="loader-container" class="loader-container"></div>
   </div>
 
+  <div id="top-nav-container" class="top-nav-container menu-half-slide-down">
+    <nav id="top-nav" class="top-nav">
+      <div id="top-home-btn">Home</div>
+      <div id="top-work-btn">Work</div>
+      <div id="top-about-btn">About</div>
+    </nav>
+    <div id="top-menu-btn" class="top-menu-btn"></div>
+  </div>
+
   <div class="navigator-container">
     <div id="page-transition" class="page-transition hide-v"></div>
-    <div id="nav-container" class="nav-container right-slide">
+    <div id="nav-container" class="nav-container menu-right-slide">
       <div id="menu-btn" class="menu-btn"></div>
       <nav id="nav" class="nav">
         <div id="home-btn">Home</div>
@@ -28,26 +39,29 @@
         <div id="about-btn">About</div>
       </nav>
     </div>
-
-
   </div>
 
   <div id="main-content" class="main-content">
 
-    <div id="header" class="header">
-      <div id="header-content" class="header-content">
-        <p data-aos="fade-right" data-aos-duration="2000">Welcome</p>
-        <div data-aos="fade-in" data-aos-duration="2000" data-aos-delay="2000">This is Kdor website, a website was made by Khang for his study. All right reserved to him. Please contact him for more information about this website and its contents.
-          website.</div>
+    <div id="home-container" class="home-container">
+      <div id="home" class="home">
+        <div id="home-content" class="home-content">
+          <p data-aos="fade-in" data-aos-duration="2000">Welcome</p>
+          <div data-aos="fade-in" data-aos-duration="2000" data-aos-delay="1000">I am Khang, a software engineer in the future :)). But now, I am just a student. As you can guess, my major is
+            software engineering. This is my website, it was made to show all my projects and the projects that I am working on.</div>
+        </div>
+        <div class="video-container">
+          <video id="video1" class="video" autoplay>
+            <source src="src/video/logo-2_1.mp4" type="video/mp4">
+          </video>
+          <video id="video2" class="video hide-d" autoplay loop>
+            <source src="src/video/logo-2.mp4" type="video/mp4">
+          </video>
+          <div class="video-mask"></div>
+        </div>
       </div>
-      <div class="video-container">
-        <video id="video1" class="video" autoplay>
-          <source src="src/video/logo-2_1.mp4" type="video/mp4">
-        </video>
-        <video id="video2" class="video hide-d" autoplay loop>
-          <source src="src/video/logo-2.mp4" type="video/mp4">
-        </video>
-      </div>
+
+      <div id="next-btn" class="next-btn"></div>
     </div>
 
     <div id="body" class="body">
@@ -65,6 +79,7 @@
   <script src="src/animation/animation.js"></script>
   <script src="src/js/navigator.js"></script>
   <script src="src/js/index.js"></script>
+  <script src="src/js/home.js"></script>
 </body>
 
 </html>

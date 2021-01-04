@@ -2,6 +2,7 @@ const loader = document.getElementById('loader')
 const loaderContainer = document.getElementById('loader-container')
 const pageTransElement = document.getElementById('page-transition')
 const menuBtnContainer = document.getElementById('menu-btn')
+const topMenuBtnContainer = document.getElementById('top-menu-btn')
 
 let loaderAni = lottie.loadAnimation({
   container: loaderContainer, // the dom element that will contain the animation
@@ -23,6 +24,15 @@ let pageTransition = lottie.loadAnimation({
 
 let menuBtn = lottie.loadAnimation({
   container: menuBtnContainer,
+  renderer: 'canvas',
+  loop: false,
+  autoplay: false,
+  path: 'src/animation/menuBtn.json',
+  rendererSettings:{ preserveAspectRatio:'none' }
+});
+
+let topMenuBtn = lottie.loadAnimation({
+  container: topMenuBtnContainer,
   renderer: 'canvas',
   loop: false,
   autoplay: false,
